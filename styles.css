@@ -1,0 +1,283 @@
+:root {
+    --primary-green: #065F2E;
+    --primary-yellow: #F7D33B;
+    --dark-gray: #333;
+    --light-gray: #f8f9fa;
+}
+
+body {
+    font-family: 'Inter', 'Arial', sans-serif;
+    color: var(--dark-gray);
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Impact', 'Bebas Neue', 'Oswald', 'Arial Black', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Hero Section Styling */
+#home {
+    background-color: var(--primary-green) !important;
+    background: var(--primary-green) !important;
+}
+
+.gradient-bg {
+    background: linear-gradient(135deg, var(--primary-green) 0%, var(--primary-yellow) 100%);
+}
+
+.btn-primary {
+    background-color: var(--primary-yellow);
+    color: var(--primary-green);
+    border: 2px solid var(--primary-yellow);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-green);
+    color: var(--primary-yellow);
+}
+
+.btn-secondary {
+    background-color: var(--primary-green);
+    color: var(--primary-yellow);
+    border: 2px solid var(--primary-green);
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: var(--primary-yellow);
+    color: var(--primary-green);
+    transform: translateY(-2px);
+}
+
+.testimonial-card {
+    transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+
+.resource-card {
+    transition: all 0.3s ease;
+}
+
+.resource-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary-green);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+.scroll-to-top.active {
+    opacity: 1;
+}
+
+.scroll-to-top:hover {
+    background-color: #218838;
+}
+
+.stats-box {
+    transition: all 0.3s ease;
+}
+
+.stats-box:hover {
+    transform: scale(1.05);
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.play-button:hover {
+    background-color: var(--primary-green);
+    color: white;
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--primary-green);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn 0.8s ease forwards;
+}
+
+/* Coach Section and Beyond - Primary Theme Colors */
+#coach {
+    background: linear-gradient(135deg, var(--primary-yellow) 0%, var(--primary-green) 100%) !important;
+    color: white !important;
+}
+
+#coach h2 {
+    color: var(--primary-green) !important;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8) !important;
+}
+
+#coach h3 {
+    color: var(--primary-green) !important;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8) !important;
+}
+
+#coach p {
+    color: white !important;
+}
+
+#coach .stats-box {
+    background-color: var(--primary-yellow) !important;
+    border-left-color: var(--primary-green) !important;
+}
+
+#coach .stats-box .text-3xl {
+    color: var(--primary-green) !important;
+}
+
+#coach .stats-box .text-gray-700 {
+    color: var(--primary-green) !important;
+}
+
+#resources {
+    background-color: var(--primary-yellow) !important;
+}
+
+#resources h2 {
+    color: var(--primary-green) !important;
+}
+
+#resources p {
+    color: var(--primary-green) !important;
+}
+
+#resources .resource-card {
+    background-color: white !important;
+    border: 2px solid var(--primary-green) !important;
+}
+
+#resources .resource-card h3 {
+    color: var(--primary-green) !important;
+}
+
+#resources .resource-card p {
+    color: var(--primary-green) !important;
+}
+
+#success {
+    background-color: var(--primary-green) !important;
+}
+
+#success h2 {
+    color: var(--primary-yellow) !important;
+}
+
+#success > div > p {
+    color: white !important;
+}
+
+#success .testimonial-card {
+    background-color: var(--primary-yellow) !important;
+    border-top-color: var(--primary-green) !important;
+}
+
+#success .testimonial-card h4 {
+    color: var(--primary-green) !important;
+}
+
+#success .testimonial-card p {
+    color: var(--primary-green) !important;
+}
+
+#success .testimonial-card .text-gray-500 {
+    color: var(--primary-green) !important;
+}
+
+#contact {
+    background: linear-gradient(135deg, var(--primary-green) 0%, var(--primary-yellow) 100%) !important;
+}
+
+footer {
+    background-color: var(--primary-green) !important;
+}
+
+footer h4 {
+    color: var(--primary-yellow) !important;
+}
+
+footer .text-gray-400 {
+    color: white !important;
+}
+
+footer .text-gray-400:hover {
+    color: var(--primary-yellow) !important;
+}
+
+footer .bg-gray-700 {
+    background-color: var(--primary-yellow) !important;
+}
+
+footer .bg-gray-700:hover {
+    background-color: white !important;
+    color: var(--primary-green) !important;
+}
+
+footer .bg-green-600 {
+    background-color: var(--primary-yellow) !important;
+    color: var(--primary-green) !important;
+}
+
+footer .bg-green-600:hover {
+    background-color: white !important;
+}

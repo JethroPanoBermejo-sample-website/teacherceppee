@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LET Expert Coaching - Pass Your LET Exam with Confidence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3">
+            <!-- Desktop Navigation - Only show on large screens (1024px+) -->
+            <div class="hidden lg:grid lg:grid-cols-3 items-center">
+                <!-- Left: Navigation Links -->
+                <div class="flex space-x-6">
+                    <a href="#home" class="nav-link text-gray-700 hover:text-green-600 font-medium">Home</a>
+                    <a href="#coach" class="nav-link text-gray-700 hover:text-green-600 font-medium">Coach</a>
+                    <a href="#resources" class="nav-link text-gray-700 hover:text-green-600 font-medium">Resources</a>
+                    <a href="#success" class="nav-link text-gray-700 hover:text-green-600 font-medium">Success Stories</a>
+                    <a href="#contact" class="nav-link text-gray-700 hover:text-green-600 font-medium">Contact</a>
+                </div>
+                
+                <!-- Center: Logo -->
+                <div class="flex justify-center">
+                    <img src="img/TCRC-teacherceppeereviewcenter-logo.jpg" alt="Teacher Ceppee Review Center" class="h-12 w-auto">
+                </div>
+                
+                <!-- Right: Enroll Now Button -->
+                <div class="flex justify-end items-center">
+                    <a href="#contact" class="bg-green-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-green-700 transition-colors">
+                        Enroll Now
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Tablet Navigation - Show on medium screens (768px - 1023px) -->
+            <div class="hidden md:flex lg:hidden justify-between items-center">
+                <!-- Left: Compact Navigation Links -->
+                <div class="flex space-x-4">
+                    <a href="#home" class="nav-link text-gray-700 hover:text-green-600 font-medium text-sm">Home</a>
+                    <a href="#coach" class="nav-link text-gray-700 hover:text-green-600 font-medium text-sm">Coach</a>
+                    <a href="#resources" class="nav-link text-gray-700 hover:text-green-600 font-medium text-sm">Resources</a>
+                </div>
+                
+                <!-- Center: Logo -->
+                <div class="flex justify-center">
+                    <img src="img/TCRC-teacherceppeereviewcenter-logo.jpg" alt="Teacher Ceppee Review Center" class="h-10 w-auto">
+                </div>
+                
+                <!-- Right: Enroll Button -->
+                <div class="flex items-center">
+                    <a href="#contact" class="bg-green-600 text-white px-3 py-2 rounded-lg text-sm font-medium hover:bg-green-700 transition-colors">
+                        Enroll
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Mobile Navigation - Show on small screens (below 768px) -->
+            <div class="md:hidden flex justify-between items-center">
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="text-gray-700 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+                
+                <!-- Mobile Logo (Center) -->
+                <div class="flex-1 flex justify-center">
+                    <img src="img/TCRC-teacherceppeereviewcenter-logo.jpg" alt="Teacher Ceppee Review Center" class="h-10 w-auto">
+                </div>
+                
+                <!-- Mobile Right: Enroll Button -->
+                <div class="flex items-center">
+                    <a href="#contact" class="bg-green-600 text-white px-3 py-1 rounded-lg text-sm font-medium hover:bg-green-700 transition-colors">
+                        Enroll
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white py-2 px-4 shadow-lg">
+            <a href="#home" class="block py-2 text-gray-700 hover:text-green-600 font-medium">Home</a>
+            <a href="#coach" class="block py-2 text-gray-700 hover:text-green-600 font-medium">Coach</a>
+            <a href="#resources" class="block py-2 text-gray-700 hover:text-green-600 font-medium">Resources</a>
+            <a href="#success" class="block py-2 text-gray-700 hover:text-green-600 font-medium">Success Stories</a>
+            <a href="#contact" class="block py-2 text-gray-700 hover:text-green-600 font-medium">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative text-white min-h-screen flex flex-col justify-between py-12" style="background-color: var(--primary-green);">
+        
+        <!-- Top Section: Main Heading -->
+        <div class="container mx-auto px-4 text-center pt-8">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-shadow" style="color: var(--primary-yellow);">Pass Your LET Exam with Expert Coaching</h1>
+        </div>
+        
+        <!-- Middle Section: Coach Logos -->
+        <div class="container mx-auto px-4 flex items-center justify-center flex-1">
+                <!-- Desktop: Single Row Layout -->
+                <div class="hidden lg:flex justify-center items-center space-x-8">
+                    <!-- Coach Joshua -->
+                    <div class="text-center">
+                        <div class="w-60 h-60 mb-4">
+                            <img src="img/joshua-tcrc-logo.png" alt="Coach Joshua" class="w-full h-full object-contain" loading="lazy">
+                        </div>
+                        <h4 class="text-xl font-bold text-white/80">Coach Joshua</h4>
+                        <p class="text-lg text-white/60">Sept 2019 Top 1</p>
+                    </div>
+                    
+                    <!-- Coach Weng -->
+                    <div class="text-center">
+                        <div class="w-60 h-60 mb-4">
+                            <img src="img/weng-tcrc-logo.png" alt="Coach Weng" class="w-full h-full object-contain" loading="lazy">
+                        </div>
+                        <h4 class="text-xl font-bold text-white/80">Coach Weng</h4>
+                        <p class="text-lg text-white/60">Sept 2021 Top 1</p>
+                    </div>
+                    
+                    <!-- Teacher Ceppee -->
+                    <div class="text-center">
+                        <div class="w-60 h-60 mb-4">
+                            <img src="img/teacherceppee-tcrc-logo.png" alt="Teacher Ceppee" class="w-full h-full object-contain" loading="lazy">
+                        </div>
+                        <h4 class="text-xl font-bold text-white/80">Teacher Ceppee</h4>
+                        <p class="text-lg text-white/60">TCRC Director</p>
+                    </div>
+                    
+                    <!-- Coach AJ -->
+                    <div class="text-center">
+                        <div class="w-60 h-60 mb-4">
+                            <img src="img/aj-tcrc-logo.png" alt="Coach AJ" class="w-full h-full object-contain" loading="lazy">
+                        </div>
+                        <h4 class="text-xl font-bold text-white/80">Coach AJ</h4>
+                        <p class="text-lg text-white/60">Sept 2019 Top 1</p>
+                    </div>
+                </div>
+                
+                <!-- Tablet/Mobile: Grid Layout -->
+                <div class="lg:hidden grid grid-cols-2 gap-6 max-w-2xl mx-auto">
+                    <!-- Coach Joshua -->
+                    <div class="text-center">
+                        <div class="w-40 h-40 mb-3 mx-auto">
+                            <img src="img/joshua-tcrc-logo.png" alt="Coach Joshua" class="w-full h-full object-contain" loading="lazy">
+                        </div>
+                        <h4 class="text-base font-bold text-white/80">Coach Joshua</h4>
+                        <p class="text-sm text-white/60">Sept 2019 Top 1</p>
+                    </div>
+                    
+                    <!-- Coach Weng -->
+                    <div class="text-center">
+                        <div class="w-40 h-40 mb-3 mx-auto">
+                            <img src="img/weng-tcrc-logo.png" alt="Coach Weng" class="w-full h-full object-contain" loading="lazy">
+                        </div>
+                        <h4 class="text-base font-bold text-white/80">Coach Weng</h4>
+                        <p class="text-sm text-white/60">Sept 2021 Top 1</p>
+                    </div>
+                    
+                    <!-- Teacher Ceppee -->
+                    <div class="text-center">
+                        <div class="w-40 h-40 mb-3 mx-auto">
+                            <img src="img/teacherceppee-tcrc-logo.png" alt="Teacher Ceppee" class="w-full h-full object-contain" loading="lazy">
+                        </div>
+                        <h4 class="text-base font-bold text-white/80">Teacher Ceppee</h4>
+                        <p class="text-sm text-white/60">TCRC Director</p>
+                    </div>
+                    
+                    <!-- Coach AJ -->
+                    <div class="text-center">
+                        <div class="w-40 h-40 mb-3 mx-auto">
+                            <img src="img/aj-tcrc-logo.png" alt="Coach AJ" class="w-full h-full object-contain" loading="lazy">
+                        </div>
+                        <h4 class="text-base font-bold text-white/80">Coach AJ</h4>
+                        <p class="text-sm text-white/60">Sept 2019 Top 1</p>
+                    </div>
+                </div>
+        </div>
+        
+        <!-- Bottom Section: Subtext and Buttons -->
+        <div class="container mx-auto px-4 text-center pb-8">
+            <div class="max-w-4xl mx-auto">
+                <p class="text-xl md:text-2xl mb-8 text-shadow max-w-3xl mx-auto">Join hundreds of successful LET passers with our proven theory and practice guidance.</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center">
+                    <a href="#contact" class="btn-primary py-3 px-6 rounded-lg font-bold text-center">Enroll Now</a>
+                    <a href="#resources" class="btn-secondary py-3 px-6 rounded-lg font-bold text-center">Watch Free Sample Lesson</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coach Introduction -->
+    <section id="coach" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-green-600">Meet Your LET Coach</h2>
+            
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/3 mb-10 md:mb-0 flex justify-center">
+                    <div class="relative">
+                        <img src="img/teacherceppee-tcrc-logo.png" 
+                             alt="Coach Profile" 
+                             class="w-80 h-80 object-contain"
+                             loading="lazy">
+                    </div>
+                </div>
+                <div class="md:w-2/3 md:pl-12">
+                    <h3 class="text-2xl font-bold mb-4">Teacher Ceppee</h3>
+                    <p class="text-gray-700 mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <p class="text-gray-700 mb-8"> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                        <div class="stats-box bg-green-50 p-4 rounded-lg text-center border-l-4 border-green-500">
+                            <div class="text-3xl font-bold text-green-600">1000+</div>
+                            <div class="text-gray-700">Students Passed</div>
+                        </div>
+                        <div class="stats-box bg-yellow-50 p-4 rounded-lg text-center border-l-4 border-yellow-500">
+                            <div class="text-3xl font-bold text-yellow-600">95%</div>
+                            <div class="text-gray-700">Success Rate</div>
+                        </div>
+                        <div class="stats-box bg-green-50 p-4 rounded-lg text-center border-l-4 border-green-500">
+                            <div class="text-3xl font-bold text-green-600">5+</div>
+                            <div class="text-gray-700">Years Experience</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Free Learning Resources -->
+    <section id="resources" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-6 text-green-600">Free LET Preparation Materials</h2>
+            <p class="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">Get started with our free resources to boost your LET preparation today.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Resource Card 1 -->
+                <div class="resource-card bg-white p-6 rounded-lg shadow-md hover:shadow-lg">
+                    <div class="relative mb-4">
+                        <img src="img/teacherceppee-tcrc-video.jpg" 
+                             alt="Sample Lesson" 
+                             class="rounded-lg w-full h-48 object-cover">
+                        <div class="play-button">
+                            <i class="fas fa-play text-2xl"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Free Sample Lesson</h3>
+                    <p class="text-gray-600 mb-4">Watch our most popular lesson on Professional Education topics.</p>
+                    <a href="videos.html" class="btn-secondary py-2 px-4 rounded-lg font-medium text-sm inline-block">Watch Now</a>
+                </div>
+                
+                <!-- Resource Card 2 -->
+                <div class="resource-card bg-white p-6 rounded-lg shadow-md hover:shadow-lg">
+                    <div class="mb-4">
+                        <img src="img/teacherceppee-freemockboardlinks.jpg" 
+                             alt="Practice Test" 
+                             class="rounded-lg w-full h-48 object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Practice Test Bundle</h3>
+                    <p class="text-gray-600 mb-4">Check it out our Free TCRC Mock Board Links.</p>
+                    <a href="mockboard.html" class="btn-secondary py-2 px-4 rounded-lg font-medium text-sm inline-block">View Now</a>
+                </div>
+                
+                <!-- Resource Card 3 -->
+                <div class="resource-card bg-gray-100 p-6 rounded-lg shadow-md opacity-75">
+                    <div class="mb-4 relative">
+                        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                             alt="Study Guide" 
+                             class="rounded-lg w-full h-48 object-cover grayscale">
+                        <div class="absolute inset-0 bg-gray-900 bg-opacity-50 rounded-lg flex items-center justify-center">
+                            <span class="text-white text-xl font-bold">Coming Soon</span>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-500">Unknown</h3>
+                    <p class="text-gray-500 mb-4">Unknown</p>
+                    <button class="bg-gray-400 text-white py-2 px-4 rounded-lg font-medium text-sm inline-block cursor-not-allowed" disabled>Coming Soon</button>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#contact" class="btn-primary py-3 px-8 rounded-lg font-bold inline-block">Get Full Access to All Resources</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Student Success Stories -->
+    <section id="success" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-6 text-green-600">Success Stories</h2>
+            <p class="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">Meet our top passers who achieved their dreams with our coaching program.</p>
+            
+            <!-- Carousel Container -->
+            <div class="relative max-w-6xl mx-auto">
+                <!-- Navigation Arrows -->
+                <button id="prevBtn" class="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white shadow-lg rounded-full w-12 h-12 flex items-center justify-center text-gray-600 hover:text-green-600 hover:shadow-xl transition-all duration-300 -ml-6">
+                    <i class="fas fa-chevron-left text-lg"></i>
+                </button>
+                <button id="nextBtn" class="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white shadow-lg rounded-full w-12 h-12 flex items-center justify-center text-gray-600 hover:text-green-600 hover:shadow-xl transition-all duration-300 -mr-6">
+                    <i class="fas fa-chevron-right text-lg"></i>
+                </button>
+                
+                <!-- Photo Gallery Slider -->
+                <div id="testimonialSlider" class="overflow-hidden">
+                    <div id="testimonialTrack" class="flex transition-transform duration-500 ease-in-out">
+                        <!-- Slides will be generated dynamically by JavaScript -->
+                    </div>
+                </div>
+                
+                <!-- Dots Indicator -->
+                <div id="dotsContainer" class="flex justify-center mt-8 space-x-2">
+                    <!-- Dots will be generated dynamically by JavaScript -->
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <a href="#contact" class="btn-primary py-3 px-8 rounded-lg font-bold inline-block">Start Your Success Story Today</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- TCRC Pricing & Enrollment Section -->
+    <section id="contact" class="py-20" style="background: linear-gradient(135deg, #2d5016 0%, #4ade80 100%);">
+        <div class="container mx-auto px-4">
+            <!-- Header with Logo -->
+            <div class="text-center mb-12">
+                <div class="flex justify-center mb-6">
+                    <img src="img/TCRC-teacherceppeereviewcenter-logo.jpg" alt="TCRC Logo" class="h-20 w-auto">
+                </div>
+                <div class="bg-gray-800 text-white py-4 px-8 rounded-full inline-block mb-4 transform -rotate-2 shadow-lg">
+                    <h2 class="text-2xl md:text-3xl font-bold">EARLY BIRD PROMO!!</h2>
+                </div>
+                <div class="bg-green-600 text-white py-3 px-6 rounded-lg inline-block transform rotate-1 shadow-lg">
+                    <h3 class="text-xl md:text-2xl font-bold">SEPT 2025 LET</h3>
+                </div>
+            </div>
+
+            <!-- Pricing Cards -->
+            <div class="max-w-6xl mx-auto mb-12">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <!-- Prof Ed & Gen Ed Package -->
+                    <div class="bg-yellow-400 rounded-2xl p-8 shadow-2xl transform hover:scale-105 transition-transform duration-300">
+                        <div class="text-center mb-6">
+                            <h3 class="text-2xl md:text-3xl font-bold text-gray-800 mb-2">PROF ED & GEN ED</h3>
+                            <div class="text-6xl md:text-7xl font-bold text-red-600 mb-2">₱700</div>
+                            <p class="text-gray-700 font-medium">Complete Professional & General Education Package</p>
+                        </div>
+                        
+                        <div class="space-y-3 mb-8">
+                            <div class="flex items-center bg-white bg-opacity-50 p-3 rounded-lg">
+                                <div class="w-6 h-6 bg-green-600 rounded-full flex items-center justify-center mr-3">
+                                    <i class="fas fa-check text-white text-sm"></i>
+                                </div>
+                                <span class="font-semibold text-gray-800">Content-Based Lectures</span>
+                            </div>
+                            <div class="flex items-center bg-white bg-opacity-50 p-3 rounded-lg">
+                                <div class="w-6 h-6 bg-green-600 rounded-full flex items-center justify-center mr-3">
+                                    <i class="fas fa-check text-white text-sm"></i>
+                                </div>
+                                <span class="font-semibold text-gray-800">Free Mock Boards</span>
+                            </div>
+                            <div class="flex items-center bg-white bg-opacity-50 p-3 rounded-lg">
+                                <div class="w-6 h-6 bg-green-600 rounded-full flex items-center justify-center mr-3">
+                                    <i class="fas fa-check text-white text-sm"></i>
+                                </div>
+                                <span class="font-semibold text-gray-800">Run Through Sessions</span>
+                            </div>
+                            <div class="flex items-center bg-white bg-opacity-50 p-3 rounded-lg">
+                                <div class="w-6 h-6 bg-green-600 rounded-full flex items-center justify-center mr-3">
+                                    <i class="fas fa-check text-white text-sm"></i>
+                                </div>
+                                <span class="font-semibold text-gray-800">Ultimate Final Coaching</span>
+                            </div>
+                            <div class="flex items-center bg-white bg-opacity-50 p-3 rounded-lg">
+                                <div class="w-6 h-6 bg-green-600 rounded-full flex items-center justify-center mr-3">
+                                    <i class="fas fa-check text-white text-sm"></i>
+                                </div>
+                                <span class="font-semibold text-gray-800">Pre-Board Exams & Blessings</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Major Subjects Package -->
+                    <div class="bg-yellow-400 rounded-2xl p-8 shadow-2xl transform hover:scale-105 transition-transform duration-300">
+                        <div class="text-center mb-6">
+                            <h3 class="text-2xl md:text-3xl font-bold text-gray-800 mb-2">MAJOR SUBJECTS</h3>
+                            <div class="text-6xl md:text-7xl font-bold text-red-600 mb-2">₱400</div>
+                            <p class="text-gray-700 font-medium">Specialized Major Subject Coaching</p>
+                        </div>
+                        
+                        <div class="space-y-3 mb-8">
+                            <div class="flex items-center bg-white bg-opacity-50 p-3 rounded-lg">
+                                <div class="w-6 h-6 bg-green-600 rounded-full flex items-center justify-center mr-3">
+                                    <i class="fas fa-check text-white text-sm"></i>
+                                </div>
+                                <span class="font-semibold text-gray-800">Content-Based Lectures</span>
+                            </div>
+                            <div class="flex items-center bg-white bg-opacity-50 p-3 rounded-lg">
+                                <div class="w-6 h-6 bg-green-600 rounded-full flex items-center justify-center mr-3">
+                                    <i class="fas fa-check text-white text-sm"></i>
+                                </div>
+                                <span class="font-semibold text-gray-800">Free Mock Boards</span>
+                            </div>
+                            <div class="flex items-center bg-white bg-opacity-50 p-3 rounded-lg">
+                                <div class="w-6 h-6 bg-green-600 rounded-full flex items-center justify-center mr-3">
+                                    <i class="fas fa-check text-white text-sm"></i>
+                                </div>
+                                <span class="font-semibold text-gray-800">Run Through Sessions</span>
+                            </div>
+                            <div class="flex items-center bg-white bg-opacity-50 p-3 rounded-lg">
+                                <div class="w-6 h-6 bg-green-600 rounded-full flex items-center justify-center mr-3">
+                                    <i class="fas fa-check text-white text-sm"></i>
+                                </div>
+                                <span class="font-semibold text-gray-800">Ultimate Final Coaching</span>
+                            </div>
+                            <div class="flex items-center bg-white bg-opacity-50 p-3 rounded-lg">
+                                <div class="w-6 h-6 bg-green-600 rounded-full flex items-center justify-center mr-3">
+                                    <i class="fas fa-check text-white text-sm"></i>
+                                </div>
+                                <span class="font-semibold text-gray-800">Pre-Board Exams & Blessings</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="text-center">
+                <div class="bg-gray-800 text-white py-4 px-8 rounded-full inline-block mb-6 transform rotate-1 shadow-lg">
+                    <h3 class="text-xl md:text-2xl font-bold">MESSAGE ME</h3>
+                </div>
+                
+                <div class="max-w-md mx-auto bg-white rounded-2xl p-8 shadow-2xl">
+                    <div class="flex justify-center mb-6">
+                        <img src="img/teacherceppee-tcrc-logo.png" alt="Teacher Ceppee" class="h-16 w-16 rounded-full">
+                    </div>
+                    
+                    <h4 class="text-2xl font-bold text-gray-800 mb-4">Ready to Enroll?</h4>
+                    <p class="text-gray-600 mb-6">Join hundreds of successful LET passers. Message us directly on Facebook to secure your slot!</p>
+                    
+                    <a href="https://web.facebook.com/teacherceppee" 
+                       target="_blank" 
+                       class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full inline-flex items-center transform hover:scale-105 transition-all duration-300 shadow-lg">
+                        <i class="fab fa-facebook-f mr-3 text-xl"></i>
+                        <span class="text-lg">Message on Facebook</span>
+                    </a>
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <img src="img/TCRC-teacherceppeereviewcenter-logo.jpg" alt="TCRC Logo" class="h-10 w-auto mr-3">
+                        <span class="text-xl font-bold">TCRC</span>
+                    </div>
+                    <p class="text-gray-400">The premier coaching program for aspiring teachers preparing for the Licensure Examination for Teachers.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="#coach" class="text-gray-400 hover:text-white">About Coach</a></li>
+                        <li><a href="#resources" class="text-gray-400 hover:text-white">Free Resources</a></li>
+                        <li><a href="#success" class="text-gray-400 hover:text-white">Success Stories</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Contact Us</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center"><i class="fas fa-map-marker-alt mr-2 text-green-500"></i> Philippines</li>
+                        <li class="flex items-center">
+                            <i class="fab fa-facebook-f mr-2 text-blue-500"></i> 
+                            <a href="https://web.facebook.com/teacherceppee" target="_blank" class="text-gray-400 hover:text-white">Facebook Page</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="https://web.facebook.com/teacherceppee" target="_blank" class="bg-gray-700 text-white p-2 rounded-full w-10 h-10 flex items-center justify-center hover:bg-blue-600">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-gray-700 text-white p-2 rounded-full w-10 h-10 flex items-center justify-center hover:bg-red-600">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 TCRC - Teacher Ceppee Review Center. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <div class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
