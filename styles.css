@@ -9,6 +9,11 @@ body {
     font-family: 'Inter', 'Arial', sans-serif;
     color: var(--dark-gray);
     scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+html {
+    overflow-x: hidden;
 }
 
 h1, h2, h3, h4 {
@@ -26,6 +31,26 @@ h1, h2, h3, h4 {
 #home {
     background-color: var(--primary-green) !important;
     background: var(--primary-green) !important;
+    overflow-x: hidden;
+}
+
+/* Ensure all sections don't cause horizontal overflow */
+section {
+    overflow-x: hidden;
+}
+
+/* Responsive container fix */
+.container {
+    max-width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+@media (max-width: 640px) {
+    .container {
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+    }
 }
 
 .gradient-bg {
